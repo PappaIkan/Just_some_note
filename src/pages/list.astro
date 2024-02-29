@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout>
+    <h1>ini Liat</h1>
+    <button id="nav_to_index" class="Button">kembali ke home</button>
+</Layout>
+
+<style>
+    .Button{
+        background-color: blueviolet;
+    }
+</style>
+
+<script>
+    const button = document.getElementById("nav_to_index")
+    button?.addEventListener("click", () => {
+        window.location.href = "/";
+    });
+</script>
